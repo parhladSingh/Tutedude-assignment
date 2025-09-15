@@ -13,7 +13,6 @@ export default function App() {
   const logsEndRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
 
-  // detect if user is on mobile
   useEffect(() => {
     const checkMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(
       navigator.userAgent
@@ -33,7 +32,6 @@ export default function App() {
     console.log("LOG:", event);
   };
 
-  // auto scroll logs to bottom
   useEffect(() => {
     if (logsEndRef.current) {
       logsEndRef.current.scrollIntoView({ behavior: "smooth" });
