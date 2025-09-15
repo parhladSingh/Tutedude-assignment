@@ -61,7 +61,7 @@ client/
 │ │
 │ ├── index.js # React DOM entry point
 │
-│── package.jso
+│── package.json
 ```
 
 ##  Installation & Setup
