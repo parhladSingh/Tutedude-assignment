@@ -9,21 +9,25 @@ It ensures integrity by detecting:
 
 The system works in real-time on the browser using **React + TensorFlow.js**.
 
+## Quick Demo
+
+- **Live link** - https://tutedude-assignment-eight.vercel.app/
+
 ---
 
 ## ✨ Features
-- ✅ Live webcam feed (start/stop camera).
-- ✅ Candidate name input before starting.
-- ✅ **Focus Detection**:
+-  Live webcam feed (start/stop camera).
+-  Candidate name input before starting.
+-  **Focus Detection**:
   - Detects if candidate looks away for >5s.
   - Detects if no face is present for >10s.
   - Detects multiple faces in the frame.
-- ✅ **Object Detection**:
+-  **Object Detection**:
   - Mobile phone, book, notes, paper, laptop, etc.
-- ✅ Logs Sidebar:
+-  Logs Sidebar:
   - Shows all events with timestamps.
   - Auto-scrolls to latest event.
-- ✅ **Proctoring Report (CSV)**:
+-  **Proctoring Report (CSV)**:
   - Candidate name
   - Interview duration
   - Focus lost count
@@ -32,7 +36,7 @@ The system works in real-time on the browser using **React + TensorFlow.js**.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Frontend:** React.js (Vite/CRA)
 - **ML Models:** TensorFlow.js, coco-ssd
 - **State Management:** React Hooks
@@ -41,7 +45,7 @@ The system works in real-time on the browser using **React + TensorFlow.js**.
 
 ---
 
-## 📂 Directory Structure
+## Directory Structure
 
 client/
 │── public/
@@ -60,11 +64,24 @@ client/
 │── package.jso
 
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
-1. Clone the repository:
+**1. Clone the repository:**
    ```bash
    git clone https://github.com/your-username/focus-object-detection.git
+```
 
 2. Go to the client folder:
-   cd focus-object-detection/client   
+ ```bash
+   cd tutedude-assignment
+```
+**3. Install all dependencies:**
+```bash
+npm install
+```
+**4. Start development server:**
+```bash
+   npm run dev
+ ```
+**7. Visit `http://localhost:5173`**
+
