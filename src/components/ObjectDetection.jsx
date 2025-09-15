@@ -42,7 +42,7 @@ export default function ObjectDetection({ videoEl, canvasEl, addLogEvent, enable
                         if (!lastLogged.current[className] || now - lastLogged.current[className] > 5000) {
                             lastLogged.current[className] = now;
 
-                            // ✅ Special logging for phone & book
+                           
                             if (className === "cell phone") {
                                 addLogEvent &&
                                     addLogEvent({
@@ -60,7 +60,6 @@ export default function ObjectDetection({ videoEl, canvasEl, addLogEvent, enable
                                         meta: { bbox },
                                     });
                             } else {
-                                // ✅ Default logging for other suspicious objects
                                 addLogEvent &&
                                     addLogEvent({
                                         type: className,
@@ -77,7 +76,7 @@ export default function ObjectDetection({ videoEl, canvasEl, addLogEvent, enable
                     ctx.lineWidth = 2;
                     ctx.strokeRect(bbox[0], bbox[1], bbox[2], bbox[3]);
 
-                    // Draw label
+                
                     ctx.font = "12px Arial";
                     ctx.fillStyle = "red";
                     ctx.fillText(`${className} (${Math.round(score * 100)}%)`, bbox[0], bbox[1] > 10 ? bbox[1] - 5 : 10);
