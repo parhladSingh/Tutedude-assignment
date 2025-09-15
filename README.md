@@ -46,7 +46,7 @@ The system works in real-time on the browser using **React + TensorFlow.js**.
 ---
 
 ## Directory Structure
-
+```bash
 client/
 │── public/
 │── src/
@@ -62,13 +62,13 @@ client/
 │ ├── index.js # React DOM entry point
 │
 │── package.jso
-
+```
 
 ##  Installation & Setup
 
 **1. Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/focus-object-detection.git
+   git clone https://github.com/parhladSingh/Tutedude-assignment.git
 ```
 
 2. Go to the client folder:
