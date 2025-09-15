@@ -7,32 +7,10 @@ It ensures integrity by detecting:
 - Unauthorized items (phone, books, notes, extra devices).
 - Suspicious activities like multiple faces or absence.
 
-The system works in real-time on the browser using **React + TensorFlow.js**.
 
 ## Quick Demo
 
 - **Live link** - https://tutedude-assignment-eight.vercel.app/
-
----
-
-## ✨ Features
--  Live webcam feed (start/stop camera).
--  Candidate name input before starting.
--  **Focus Detection**:
-  - Detects if candidate looks away for >5s.
-  - Detects if no face is present for >10s.
-  - Detects multiple faces in the frame.
--  **Object Detection**:
-  - Mobile phone, book, notes, paper, laptop, etc.
--  Logs Sidebar:
-  - Shows all events with timestamps.
-  - Auto-scrolls to latest event.
--  **Proctoring Report (CSV)**:
-  - Candidate name
-  - Interview duration
-  - Focus lost count
-  - Suspicious events count
-  - Final Integrity Score
 
 ---
 
