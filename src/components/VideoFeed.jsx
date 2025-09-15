@@ -2,13 +2,6 @@ import React, { useRef, useEffect, useState } from "react";
 import FocusDetection from "./FocusDetection";
 import ObjectDetection from "./ObjectDetection";
 
-/**
- * Basic VideoFeed component:
- * - starts/stops webcam using getUserMedia
- * - shows <video> + <canvas> overlay
- * - optional start/stop recording
- * - provides onStreamReady(stream, videoEl, canvasEl) callback so other components (Focus/Object detection) can use the video/canvas
- */
 export default function VideoFeed({ onStreamReady }) {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
@@ -20,10 +13,8 @@ export default function VideoFeed({ onStreamReady }) {
   const mediaRecorderRef = useRef(null);
   const recordedChunksRef = useRef([]);
 
-  // draw loop control
   const drawFlag = useRef(false);
 
-  //  logs collection
   const [logs, setLogs] = useState([]);
   const handleLogEvent = (event) => {
     console.log("Event Logs:", event);
@@ -202,7 +193,6 @@ export default function VideoFeed({ onStreamReady }) {
       />
     </div>
 
-    {/* --- Integrated Detection Components --- */}
     {isStreaming && (
       <>
         <FocusDetection
