@@ -199,8 +199,6 @@ export default function FocusDetection({ videoEl, canvasEl, addLogEvent, enabled
                 lastState.current = "face";
             }
         }
-
-        // --- Object Detection (cell phone, book) ---
         const detectedObject = results.detectedObject || "none";
         if (detectedObject !== lastObjectState.current) {
             if (detectedObject !== "none") {
